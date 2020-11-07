@@ -56,7 +56,3 @@ Nguyên lí thiết kế của hàm là tạo ra một ống ‘pipe’ bằng h
 6. Hàm `execArgsRedirector` thực thi các câu lệnh trong trường hợp có chuyển hướng.
 
 
-
-### Tài liệu tham khảo:
-Linux's man page ở dạng [web](https://linux.die.net/man/) và dạng `CLI` với lệnh `man <lệnh cần tra cứu>.`
-
