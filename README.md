@@ -54,12 +54,12 @@ Note: để thoát chương trình chúng ta có thể sử dụng lệnh `exit`
 3. Hàm `execArgsBuiltIn` dùng để kiểm tra và thực thi các câu lệnh thuộc loại BuiltIn (BuiltIn là những câu lệnh như: history, cd, !!, help, hello ) 
 4. Hàm `execArgs` dùng để thực thi những command line đơn giản như: echo hello, ls, cat, .. 
 
-	Kịch bản hàm `execArgs`:
+	Kịch bản hàm `execArgs` : 
 	
 		+ Dùng hàm `fork()` nhân bản tiến trình, tạo ra một tiến trình cha và một tiến trình con.
-		+ Sau đó ở tiến trình con cho chạy các command đơn giản bằng hàm `execvp`
+		+ Sau đó ở tiến trình con cho chạy các command đơn giản bằng hàm `execvp()`
 		+ Trong khi đó ở tiến trình cha, nếu có chạy ngầm thì không tiến trình cha không phải chờ tiến trình con, 
-		nếu không chạy ngầm thì tiến trình cha phải sử dụng hàm `wait` để đợi tiến trình con
+		nếu không chạy ngầm thì tiến trình cha phải sử dụng hàm `wait()` để đợi tiến trình con
 		
 
 5. Hàm `execArgsPiped` thực hiện pipe nhận hai lệnh được tách ra từ hàm separateString.
