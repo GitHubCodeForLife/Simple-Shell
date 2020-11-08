@@ -56,7 +56,7 @@ int execArgsBuiltIn(char* lineInput,char** history,int historycount){
 	int len = strlen(lineInput);
 	char* copy=malloc(sizeof(char)*len);
 	copyString(copy, lineInput);
-	char* argv[1000];
+	char* argv[100];
 	//printf("\nChuoi copy: %s",copy);
 	int counter = tokenWord(copy, argv);
 	if(counter ==0) return 0;
